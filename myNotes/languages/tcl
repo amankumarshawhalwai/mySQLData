@@ -1,0 +1,7 @@
+TCL: Transaction Control Language
+   It is used to manage the changes made by the DML.
+
+   STATEMENTS:
+   a) COMMIT: Saves the work
+   b) ROLLBACK: It is used to restore the DB to the same point before the last commit
+   c) SAVEPOINT: It is used to identify a point in the transaction to rollback to.
