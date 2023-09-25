@@ -1,0 +1,13 @@
+DDL: Data Definition Language
+  It is used to define database structure or schema.
+
+  The various statements under the DDL are:
+   a) CREATE: It is used to create new objects in a database
+   b) ALTER: It is used to alter the structure of a database
+   c) DROP: It is used to delete the structure of a table in a database
+   d) TRUNCATE: It is use to remove all the records from a table
+   e) COMMENT: It is used to add comment
+   f) RENAME: It is used to rename an object
+
+  NUANCES:
+  
