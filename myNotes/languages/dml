@@ -1,0 +1,9 @@
+DML: Data Manipulation Language
+  It is used for managing the data within objects in the database.
+
+  Statements:
+  a) Insert: To add rows to a table
+  b) Update: To update the rows of a table
+  c) Delete: To delete the unwanted rows from a table
+  d) Merge:
+  
