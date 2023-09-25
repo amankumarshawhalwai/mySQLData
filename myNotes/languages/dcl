@@ -1,0 +1,6 @@
+DCL: Data Control Language
+   It is control the data access across users
+
+  STATEMENTS:
+  a) GRANT: Used to grant the access priveleges to an user
+  b) REVOKE: Used to withdraw the access priveleges to an user
