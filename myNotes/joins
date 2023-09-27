@@ -2,6 +2,7 @@ JOINS:
 It combines two tables based on a common column or condition.
 Example: There is a student and a batch table. The Student table contains batch_id and it is also present in the batches table.
           So, we will join these two tables based on the batch_id and get our result.
+Joins execute before the select statement since join creates intermediary tables and select runs on those to return the results.
 ******************************************************************************************************************
 SELF JOIN:
 The join that happens on the same table is based on a column that would be common to both.
@@ -10,8 +11,22 @@ The column that is used in self-join is called SELF-REFERENTIAL FOREIGN KEY
 Example: A college has started a buddy program. A buddy is also a student who is a senior to a student.
          So, here we can self-join the student table using the condition student_id=buddy_id.
 ******************************************************************************************************************
-INNER JOIN:
+INNER JOIN: 
+Join to output data from multiple tables if the conditions match
 ******************************************************************************************************************
 OUTER JOIN:
+Join to output data from multiple tables if the conditions do not match and put the non-matching rows as null.
 ******************************************************************************************************************
 FULL JOIN:
+Join where a) All rows that match the conditions.
+           b) All rows that did not match the conditions from the left table.
+           c) All rows that did not match the condition from the right table.
+MySQL does not support Full-join
+**********************************************************************************************************************
+CROSS JOIN:
+Join where each row of the left table is combined with each row from the right table.
+It is used to combine data from 2 tables without any conditions.
+*********************************************************************************************************************
+TYPES OF OUTER JOIN:
+a) LEFT JOIN
+b) RIGHT JOIN
