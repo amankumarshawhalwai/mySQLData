@@ -102,7 +102,14 @@ NULL batchC
 WHERE vs ON 
 In the WHERE clause, the condition is applied after the creation of the intermediary tables but in using the ON clause, the conditions are applied while creating the
 intermediary tables.
-********************************************************************************************************************************************
-UNION:
-
 So, using On increases performance
+********************************************************************************************************************************************
+UNION & UNION ALL:
+Union allows to combine data from multiple queries and put them one after the another.
+Nuances associated with union is that all the tables used must have the same number of columns in them AND order by cannot be used on the queries since
+all of them are executed independently.
+
+Union returns distinct values since it puts the entire result from various queries into a set but if we want all data in the result then use union all. It uses a
+list to push all data and return the data.
+*********************************************************************************************************************************************
+
