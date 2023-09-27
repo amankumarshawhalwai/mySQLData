@@ -10,6 +10,11 @@ The column that is used in self-join is called SELF-REFERENTIAL FOREIGN KEY
 
 Example: A college has started a buddy program. A buddy is also a student who is a senior to a student.
          So, here we can self-join the student table using the condition student_id=buddy_id.
+
+CODE: SELECT s1.name, s2.name
+      FROM students s1
+      JOIN students s2
+      ON s1.buddy_id = s2.id;
 ******************************************************************************************************************
 INNER JOIN: 
 Join to output data from multiple tables if the conditions match
