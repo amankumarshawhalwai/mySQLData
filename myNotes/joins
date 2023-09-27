@@ -100,4 +100,9 @@ Sita batchB
 NULL batchC
 ********************************************************************************************************************************************
 WHERE vs ON 
+In the WHERE clause, the condition is applied after the creation of the intermediary tables but in using the ON clause, the conditions are applied while creating the
+intermediary tables.
+********************************************************************************************************************************************
+UNION:
 
+So, using On increases performance
