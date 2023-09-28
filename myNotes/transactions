@@ -1,1 +1,9 @@
+TRANSACTIONS:
+     Set of logically related queries executed in a particular order to complete a specific use case.
+     Example: In a bank money transfer, on the payee side the account balance is checked then debited and changes are committed.
+               On the receiver's side, the same process is repeated and the changes are committed.
 
+Now, there can be multiple transactions like this that can happen. So, concurrency problems can arise.
+a) Interaction between transactions can lead to wrong situations.
+b) Transaction may get executed only half because of system failure.
+####Test
