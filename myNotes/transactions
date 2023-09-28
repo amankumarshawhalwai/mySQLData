@@ -6,4 +6,29 @@ TRANSACTIONS:
 Now, there can be multiple transactions like this that can happen. So, concurrency problems can arise.
 a) Interaction between transactions can lead to wrong situations.
 b) Transaction may get executed only half because of system failure.
-####Test
+*********************************************************************************************************************************************************
+PROPERTIES OF A DB TO FOLLOW:
+
+ACID Properties
+A: Atomicity ||  C: Consistency || I: Isolation || D: Durability
+
+ATOMICITY: It states whether a task is fully completed or not at all. It is either 1 or 0.
+          EX: Either a money transaction is fully done or nothing is done at all.
+
+CONSISTENCY: It states that the database is consistent before and after the transaction.
+             The DB remains inconsistent during the transaction.
+           EX: During a money transfer, person A has ₹100, and person B has ₹200. So, before the transaction the total is 
+               ₹300. Person A transfers ₹50 to person B. After the transaction is over, person A has ₹50 and person B has ₹250.
+               Here, the total balance remains ₹300 after the transaction. So the DB is consistent.
+
+ISOLATION: It states that parallel transactions remain independent of each other and do not affect each other.
+           There are 4 types of isolation levels. They are:
+            a) READ UNCOMMITTED(RU)
+            b) READ COMMITTED(RC)
+            c) REPEATABLE READ(RR)
+            d) SERIALIZABLE
+
+DURABILITY: It states that the data before and after the transaction remains non-volatile. If anything happens during the transaction 
+            then the data will persist.
+**********************************************************************************************************************************************************
+ISOLATION LEVELS
